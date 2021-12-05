@@ -410,9 +410,10 @@ print(progLang)
 progLang.remove("pascal")
 print(progLang)
 
-#if there is no value it will remove the last item from the list
+#if there is no value it will remove the last item from the list (remove a random item)
 progLang.pop()
 print(progLang)
+
 progLang.pop(6) # Removes "rust" from the list
 print(progLang)
 
