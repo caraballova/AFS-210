@@ -1,6 +1,6 @@
 class Stacks:
     def __init__(self):
-        self.top = None
+        self.top = []
         self.size = 0
     
     def push(self, e):
