@@ -78,9 +78,9 @@ print("You sold ",applesSold," apples at $",applePrice," each for a total of $",
 # _ 			Subtraction 		Subtracts one number from another
 # * 			Multiplication 		Multiplies one number by another
 # / 			Division 			Divides one number by another and gives the result as a
-# 								floating-point number
+# 									floating-point number
 # // 			Integer division 	Divides one number by another and gives the result as
-# 								an integer
+# 									an integer
 # % 			Remainder 			Divides one number by another and gives the remainder
 # ** 			Exponent 			Raises a number to a power
 
