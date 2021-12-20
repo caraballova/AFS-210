@@ -48,8 +48,8 @@ class DoublyLinkedList:
             self.tail = node
             self.head = node
         else:
-            node.next = self.tail
-            self.tail.prev = node
+            node.prev = self.tail
+            self.tail.next = node
             self.tail = node
         
 
@@ -183,7 +183,7 @@ print(words.indexOf("with"))
 x = words.indexOf("you")
 words.delete("you")
 words.addAtIndex("us", x-1)
-words.addAtIndex("all", x)
+words.addAtIndex("all", words.indexOf("!")-1)
 print(words)
 
 
