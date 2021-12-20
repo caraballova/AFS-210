@@ -7,7 +7,7 @@ class Stacks:
     
     def pop(self):
         if (len(self.top) != 0):
-            return self.top.pop(0)
+            return self.top.pop(-1)
         else:
             return None
 
@@ -46,7 +46,7 @@ class Queues:
     
     def peek(self):
         if (len(self.queue) > 0):
-            return self.queue[-1]
+            return self.queue[0]
         else:
             return None
 
@@ -68,7 +68,7 @@ def isPalindrome(data):
             queues.deQueue()
         else:
             return False
-        return True
+    return True
     
 print(isPalindrome('racecar'))
 print(isPalindrome('noon'))
@@ -86,8 +86,9 @@ myStack.push('n')
 
 print(myStack.top)
 print(myStack.size())
-print(myStack.pop())
 print(myStack.peek())
+print(myStack.pop())
+
 
 myQueue = Queues()
 myQueue.enQueue('p')
@@ -99,5 +100,6 @@ myQueue.enQueue('n')
 
 print(myQueue.queue)
 print(myQueue.size())
-print(myQueue.deQueue())
 print(myQueue.peek())
+print(myQueue.deQueue())
+
